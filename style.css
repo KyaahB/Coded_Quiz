@@ -1,14 +1,12 @@
-/* .h1{
-  
-    padding: 40px;
-    text-align: center;
-    background: #3e8cd4;
-    color:pink;
-   */
+*{
+  background-color: black;
+}
 
 header{
   display: flex;
   justify-content: space-between;
+  font-weight: bolder;
+  
 
 }
 
@@ -25,63 +23,43 @@ h2{
   text-align: center;
   font-size: 35px;
   color: palevioletred;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 h3{
   text-align: center;
   margin: 5%;
   color: blueviolet;
+  font-weight: bolder;
 }
 
-/* button{
-   color: blue;
-  background-color: whitesmoke;
-  border: thin; 
-} */
-  
+
+
 #startBtn{
- margin-left: 50%;
-  color:aqua
+  margin-left: 50%;
+  color: lightskyblue;
+  
+}
+
+/* Questions Form-------------------- */
+
+
+label{
+  color: orangered;
+}
+
+#submit{
+  color: lightskyblue;
+  /* border: thin; */
+  margin: 15px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* .container{
-     display: block;
-     margin: 5px;
-     box-shadow: cornflowerblue;
-     color: darkblue;
-      width: 5px; 
-      height: 3px; 
- } */
-
+/* Page---------------- */
  .container{
-  /*list-style-type: square;
-  list-style-position: inside ; */
-  /* color: brown; */
-  /* font-size: 20px; */
-  /* padding: auto; */
-  /* text-align: right; */
+
   width: 70%;
   /* Sets top and bottom margin to 20px. Auto will center element */
   margin: 20px auto;

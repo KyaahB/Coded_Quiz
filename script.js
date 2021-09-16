@@ -4,7 +4,6 @@ var currentTime = 59;
 
 function countNumbers() {
   if (currentTime > 0) {
-    // console.log(currentTime)
     countdownEl.text(currentTime);
     currentTime--;
   }
@@ -24,15 +23,6 @@ let currentQuestionNumber = 0;
 
 const questions = [
     {
-        q: "How would you you write a closing script tag?",
-        a: [
-            "This is wrong",
-            "This is wrong",
-            "This is wrong",
-            "This is correct"
-        ]
-    },
-    {
         q: "Javascript has the ability to manipulate which front-end files?",
         a: [
             "HTML",
@@ -42,12 +32,21 @@ const questions = [
         ]
     },
     {
-        q: "What is CSS?",
+        q: "Which one of these is not a  programming language?",
         a: [
-            "This is correct",
-            "This is wrong",
-            "This is wrong",
-            "This is wrong"
+            "SQL",
+            "Python",
+            "Javascript",
+            "C-- "
+        ]
+    },
+    {
+        q: "What does HTML stand for?",
+        a: [
+            "HyperTextMarkup Language",
+            "Hot Trotting Message Lady",
+            "IDK",
+            "House-To-MessageLanguages"
         ]
     }  
 ]
@@ -65,8 +64,6 @@ var startBtn = document.querySelector('#startBtn');
 function startQuiz() {
     renderQuestion();
   }
-
-
 
 
 // function checkAnswers(index2) {
@@ -99,26 +96,23 @@ function renderQuestion(index) {
       <label for="javascript">${questions[currentQuestionNumber].a[2]}</label> <br>
       <input type="radio" id="javascript" name="fav_language" value="JavaScript">
       <label for="javascript">${questions[currentQuestionNumber].a[3]}</label> <br>
-      <input type="submit"  value="Submit" onClick="checkAnswers(${currentQuestionNumber})">
+      <input id=submit type="submit"  value="Submit" onClick="checkAnswers(${currentQuestionNumber})">
   </form>
   `;
 
   quizDiv.innerHTML = quiz;
-// });
 
-
-document.querySelector('body').append(quizDiv)
-}
+document.querySelector('body').append(quizDiv)}
 
 
 
 // <!-- To save initials at the end of the quiz -->
 
-document.getElementById("myForm").onsubmit = function() {myFunction()};
+// document.getElementById("myForm").onsubmit = function() {myFunction()};
     
-function myFunction() {
-  alert("The form was submitted");
-}
+// function myFunction() {
+//   alert("The form was submitted");
+// }
 
 
 startBtn.addEventListener('click', startQuiz)
