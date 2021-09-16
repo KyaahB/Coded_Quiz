@@ -9,7 +9,7 @@
 header{
   display: flex;
   justify-content: space-between;
-  
+
 }
 
       
@@ -33,15 +33,15 @@ h3{
   color: blueviolet;
 }
 
-button{
-  color: blue;
+/* button{
+   color: blue;
   background-color: whitesmoke;
-  border: thin;
-}
+  border: thin; 
+} */
   
-.button1{
-  display: flex;
-  justify-content: center;
+#startBtn{
+ margin-left: 50%;
+  color:aqua
 }
 
 
